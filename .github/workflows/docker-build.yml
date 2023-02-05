@@ -23,7 +23,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ github.token }}
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag ghcr.io/$IMAGE_NAME:$IMAGE_TAG
+      run: docker build . --file Dockerfile --tag ghcr.io/$IMAGE_NAME_LC:$IMAGE_TAG
     # Push
     - name: Push the Docker image
-      run: docker push ghcr.io/$IMAGE_NAME:$IMAGE_TAG
+      run: docker push ghcr.io/$IMAGE_NAME_LC:$IMAGE_TAG
