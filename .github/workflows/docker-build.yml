@@ -3,7 +3,7 @@ name: Build Docker Image
 on: [push]
 
 env:
-  IMAGE_TAG: v1.76.0
+  IMAGE_TAG: v1.82.0
   IMAGE_NAME: ${{ github.repository }}
 
 jobs:
